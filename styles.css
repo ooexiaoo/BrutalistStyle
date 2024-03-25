@@ -293,6 +293,6 @@ body {
     display: flex;
     flex-direction: row;
     white-space: nowrap;
-    writing-mode:vertical-lr;
+    writing-mode: vertical-lr;
   }
-  }
+}
