@@ -1,81 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --menu: #ffbe0b;
-    --about: #fb5607;
-    --gallery: #ff006e;
-    --resources: #8338ec;
-    --blog: #3a86ff;
-    --bg: #001219;
-    --white: #fff;
-    --contact: #d62828;
-    --careers: #000;
+  --menu: #ffbe0b;
+  --about: #fb5607;
+  --gallery: #ff006e;
+  --resources: #8338ec;
+  --blog: #3a86ff;
+  --bg: #001219;
+  --white: #fff;
+  --contact: #d62828;
+  --careers: #000;
 }
 body {
-    font-family: 'Space Mono', monospace;
-    background-color: var(--bg);
-    color: white;
-    max-width: 1500px;
-    margin: 0 auto; /* Center the body horizontally */
-    padding: 0 20px; /* Add padding to maintain spacing */
-    box-sizing: border-box; /* Include padding and border in the total width */
-    display: flex;
-    flex-direction: column; /* Arrange contents in a column */
-    align-items: center; /* Center contents horizontally */
+  font-family: "Space Mono", monospace;
+  background-color: var(--bg);
+  color: white;
+  max-width: 1500px;
+  margin: 0 auto; /* Center the body horizontally */
+  padding: 0px 10px; /* Add padding to maintain spacing */
+  box-sizing: border-box; /* Include padding and border in the total width */
+  display: flex;
+  flex-direction: column; /* Arrange contents in a column */
+  align-items: start; /* Center contents horizontally */
 }
 
-.main{
-    max-width: 1500px; /* Set max-width for the container */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 0 20px; /* Add padding to maintain spacing */
-    box-sizing: border-box; /* Include padding and border in the total width */
-    display: flex;
-    flex-direction: column; /* Arrange contents in a column */
-    align-items: center; /* Center contents horizontally */
+.main {
+  max-width: 1500px; /* Set max-width for the container */
+  margin: 0; /* Center the container horizontally */
+  padding: 0; /* Add padding to maintain spacing */
+  box-sizing: border-box; /* Include padding and border in the total width */
+  display: flex;
+  flex-direction: column; /* Arrange contents in a column */
 }
 
 .content {
-    width:85%;
-    max-width: 1200px;
-    float:left;
-    height: 100%;
-    margin: 15px 250px 0 0;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: left;
+  width: 85%;
+  max-width: 1200px;
+  float: left;
+  height: 100%;
+  margin: 15px 250px 0 0;
+  padding: 0;
 }
 
 .menu {
-    width: 15%;
-    max-width: 300px;
-    min-width: 200px; /* Set a minimum width to ensure menu content remains visible */
-    min-height: 100vh;
-    background-color: var(--bg);
-    position: fixed;
-    top: 0;
-    padding: 10px; /* Adjust padding as needed */
-    box-sizing: border-box;
-    overflow-y: auto; /* Add vertical scrollbar if needed */
-    z-index: 999; /* Ensure the menu is above other content */
+  width: 15%;
+  max-width: 300px;
+  min-width: 200px; /* Set a minimum width to ensure menu content remains visible */
+  min-height: 100vh;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  padding: 10px; /* Adjust padding as needed */
+  box-sizing: border-box;
+  overflow-y: auto; /* Add vertical scrollbar if needed */
+  z-index: 999; /* Ensure the menu is above other content */
 }
 
 .sticky {
-    position: sticky;
-    top: 0; /* Ensure it sticks to the top of the viewport */
-    background-color: var(--bg); /* Background color */
+  position: sticky;
+  top: 0; /* Ensure it sticks to the top of the viewport */
+  background-color: var(--bg); /* Background color */
 }
-
 
 .inner-section {
-    transition: height 0.5s ease;
+  transition: height 0.5s ease;
 }
 
-#menu-content{
-    height: 200px;
+#menu-content {
+  height: 200px;
 }
 
 #menu-content,
@@ -85,44 +87,44 @@ body {
 #blog-content,
 #contact-content,
 #careers-content {
-    padding: 10px;
-    border-radius: 15px;
-    margin: 20px 0 20px 0px;
-    min-height: 100px;
-    cursor: pointer;
-    transition: height 0.5s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px 0 20px 0px;
+  min-height: 100px;
+  cursor: pointer;
+  transition: height 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
-#menu-content{
-    background-color: var(--menu);
+#menu-content {
+  background-color: var(--menu);
 }
 
-#about-content{
-    background-color: var(--about);
+#about-content {
+  background-color: var(--about);
 }
 
-#gallery-content{
-    background-color: var(--gallery);
+#gallery-content {
+  background-color: var(--gallery);
 }
 
-#resources-content{
-    background-color: var(--resources);
+#resources-content {
+  background-color: var(--resources);
 }
 
-#blog-content{
-    background-color: var(--blog);
+#blog-content {
+  background-color: var(--blog);
 }
 
-#contact-content{
-    background-color: var(--contact);
+#contact-content {
+  background-color: var(--contact);
 }
 
-#careers-content{
-    background-color: var(--careers);
+#careers-content {
+  background-color: var(--careers);
 }
 
 #menu-content,
@@ -131,130 +133,166 @@ body {
 #resources-content,
 #blog-content,
 #contact-content,
-#careers-content p{
-    font-size: larger;
-    font-weight: bold;
+#careers-content p {
+  font-size: 25px;
+  font-weight: bold;
 }
 
 #number {
-    font-size: 12px;
+  font-size: 12px;
 }
 .dot {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: transparent; /* Set initial color */
-    transition: all 0.5s ease-in-out;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: transparent; /* Set initial color */
+  transition: all 0.5s ease-in-out;
 }
 
 .active .dot {
-    background-color: var(--white); /* Change color for active state */
+  background-color: var(--white); /* Change color for active state */
 }
 
-.footer{
-    width: 100%;
-    float: center;
-    text-align: center;
-    padding: 15px 0 15px 0;
-    font-size: small;
-    font-weight: 700;
-    background: var(--bg);
-    color: white;
-    bottom: 0;
-    
+.footer {
+  width: 100%;
+  float: center;
+  text-align: center;
+  padding: 15px 0 15px 0;
+  font-size: small;
+  font-weight: 700;
+  background: var(--bg);
+  color: white;
+  bottom: 0;
 }
-.section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 50px;
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px;
 }
-.section img{
-    max-width: 100%;
-    margin: 20px 50px 20px 50px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.write{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.write h2{
-    font-size: 4vw;
-    font-weight: 900;
-}
-.write p{
-    font-size: 2vw;
-    font-weight: 400;
+.section img {
+  max-width: 100%;
+  margin: 20px 50px 20px 50px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
-#home-section{
-    background-color: var(--menu);
-    border-radius: 15px;
-    margin: 20px 0 20px 0px;
+.write {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-#about-section{
-    background-color: var(--about);
-    border-radius: 15px;
-    margin: 20px 0 20px 0px;
+.write h2 {
+  font-size: 4vw;
+  font-weight: 900;
 }
-#gallery-section{
-    background-color: var(--gallery);
-    border-radius: 15px;
-    margin: 20px 0 20px 0px;
+.write p {
+  font-size: 2vw;
+  font-weight: 400;
 }
-#resources-section{
-    background-color: var(--resources);
-    border-radius: 15px;
-    margin: 20px 0 20px 0px;
+
+#home-section {
+  background-color: var(--menu);
+  border-radius: 15px;
+  margin: 20px 0 20px 0px;
 }
-#blog-section{
-    background-color: var(--blog);
-    border-radius: 15px;
-    margin: 20px 0 20px 0px;
+#about-section {
+  background-color: var(--about);
+  border-radius: 15px;
+  margin: 20px 0 20px 0px;
 }
-#contact-section{
-    background-color: var(--contact);
-    border-radius: 15px;
-    margin: 20px 0 20px 0px;
+#gallery-section {
+  background-color: var(--gallery);
+  border-radius: 15px;
+  margin: 20px 0 20px 0px;
 }
-#careers-section{
-    background-color: var(--careers);
-    border-radius: 15px;
-    margin: 20px 0 20px 0px;
+#resources-section {
+  background-color: var(--resources);
+  border-radius: 15px;
+  margin: 20px 0 20px 0px;
+}
+#blog-section {
+  background-color: var(--blog);
+  border-radius: 15px;
+  margin: 20px 0 20px 0px;
+}
+#contact-section {
+  background-color: var(--contact);
+  border-radius: 15px;
+  margin: 20px 0 20px 0px;
+}
+#careers-section {
+  background-color: var(--careers);
+  border-radius: 15px;
+  margin: 20px 0 20px 0px;
 }
 
 @media screen and (min-width: 1500px) {
-    .menu {
-        right: calc(50% - 960px); /* Position the menu 50% from the center of the screen */
-    }
-    .content {
-        right: calc(50% - 960px); /* Position the menu 50% from the center of the screen */
-    }
-    .write h2 {
-        font-size: 48px; /* Set a specific font size at this breakpoint */
-    }
+  .menu {
+    right: calc(
+      50% - 960px
+    ); /* Position the menu 50% from the center of the screen */
+  }
+  .content {
+    right: calc(
+      85% - 100px
+    ); /* Position the menu 50% from the center of the screen */
+  }
+  .write h2 {
+    font-size: 48px; /* Set a specific font size at this breakpoint */
+  }
 
-    .write p {
-        font-size: 24px; /* Set a specific font size at this breakpoint */
-    }
+  .write p {
+    font-size: 24px; /* Set a specific font size at this breakpoint */
+  }
 }
 
 @media screen and (max-width: 1500px) {
-    .menu {
-        right: 0; /* Position the menu at the right edge of the screen */
-    }
+  .menu {
+    right: 0; /* Position the menu at the right edge of the screen */
+  }
 }
 @media screen and (max-width: 1200px) {
-        .content {
-            min-width: 300px;
-            width: calc(85% - 100px); /* Adjust the width of the content based on the menu width */
-        }
-       
-}
+  .content {
+    min-width: 250px;
+    width: calc(
+      95% - 5%
+    ); /* Adjust the width of the content based on the menu width */
+    margin: 0px;
+  }
+  .menu {
+    width: 10%;
+    right: 0; /* Position the menu at the right edge of the screen */
+    min-width: 50px;
+  }
+  #home-section,
+  #about-section,
+  #gallery-section,
+  #resources-section,
+  #blog-section,
+  #contact-section,
+  #careers-section {
+    margin: 5px 0 5px 0px;
+  }
+  .section {
+    padding: 5px 10px;
+  }
+  #menu-content,
+  #about-content,
+  #gallery-content,
+  #resources-content,
+  #blog-content,
+  #contact-content,
+  #careers-content p {
+    font-size: 10px;
+    transform-origin: left top;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    writing-mode:vertical-lr;
+  }
+  }
