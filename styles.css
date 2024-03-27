@@ -67,11 +67,11 @@ body {
   width: 15%;
   max-width: 250px;
   min-width: 200px; /* Set a minimum width to ensure menu content remains visible */
-  min-height: 100vh;
+  min-height: calc(100vh - 50px);
   background-color: transparent;
-  position: absolute;
+  position:fixed;
   top: 0;
-  padding: 10px; /* Adjust padding as needed */
+  padding: 0 10px 0 10px; /* Adjust padding as needed */
   box-sizing: border-box;
   overflow-y: auto; /* Add vertical scrollbar if needed */
   z-index: 999; /* Ensure the menu is above other content */
@@ -87,7 +87,7 @@ body {
 }
 
 #menu-content {
-  height: 200px;
+  height: calc(2 * (100vh / 9));
 }
 
 #menu-content,
@@ -97,10 +97,10 @@ body {
 #blog-content,
 #contact-content,
 #careers-content {
-  padding: 10px;
+  padding: 5px;
   border-radius: 15px;
-  margin: 20px 0 20px 0px;
-  min-height: 100px;
+  margin: 5px 0 5px 0px;
+ /*  min-height: 100px; */
   cursor: pointer;
   transition: height 0.5s ease;
   display: flex;
@@ -164,20 +164,6 @@ body {
   background-color: var(--white); /* Change color for active state */
 }
 
-.footer {
-  position: fixed;
-  width: 100%;
-  text-align: center;
-  padding: 15px 0 15px 0;
-  font-size: small;
-  font-weight: 700;
-  background: var(--bg);
-  opacity: 0.75;
-  color: white;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
 .section {
   display: flex;
   flex-direction: column;

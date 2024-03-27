@@ -6,14 +6,14 @@ function toggleSection(sectionId) {
         const targetSection = document.querySelector(section.getAttribute('data-section'));
         if (section.id === sectionId) {
             section.classList.add('active');
-            section.style.height = '200px';
-            content.style.height = '200px';
+            section.style.height = 'calc(2 * (100vh / 9))';
+            content.style.height = 'calc(2 * (100vh / 9))';
             dot.style.backgroundColor = 'var(--white)'; // Set dot color for active state
             targetSection.scrollIntoView({ behavior: 'smooth' });
         } else {
             section.classList.remove('active');
-            section.style.height = '100px';
-            content.style.height = '100px';
+            section.style.height = 'calc(100vh / 9)';
+            content.style.height = 'calc(100vh / 9)';
             dot.style.backgroundColor = 'transparent'; // Reset dot color for inactive state
         }
     });
