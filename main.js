@@ -1,5 +1,6 @@
+const sections = document.querySelectorAll('.inner-section');
+
 function toggleSection(sectionId) {
-    const sections = document.querySelectorAll('.inner-section');
     sections.forEach(section => {
         const content = section.querySelector('div');
         const dot = section.querySelector('.dot');
@@ -18,3 +19,45 @@ function toggleSection(sectionId) {
         }
     });
 }
+
+document.addEventListener('keydown', function(event) {
+    const keyCode = parseInt(event.key);
+    switch (keyCode) {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+            let sectionId = '';
+            switch (keyCode) {
+                case 1:
+                    sectionId = 'home-menu';
+                    break;
+                case 2:
+                    sectionId = 'about-menu';
+                    break;
+                case 3:
+                    sectionId = 'gallery-menu';
+                    break;
+                case 4:
+                    sectionId = 'blog-menu';
+                    break;
+                case 5:
+                    sectionId = 'careers-menu';
+                    break;
+                case 6:
+                    sectionId = 'resources-menu';
+                    break;
+                case 7:
+                    sectionId = 'contact-menu';
+                    break;
+            }
+            toggleSection(sectionId);
+            break;
+        default:
+            // do nothing
+            break;
+    }
+});

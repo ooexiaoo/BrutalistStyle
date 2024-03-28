@@ -65,8 +65,8 @@ body {
 
 .menu {
   width: 15%;
-  max-width: 250px;
-  min-width: 200px; /* Set a minimum width to ensure menu content remains visible */
+  max-width: 150px;
+  min-width: 100px; /* Set a minimum width to ensure menu content remains visible */
   min-height: calc(100vh - 50px);
   background-color: transparent;
   position:fixed;
