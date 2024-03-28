@@ -231,6 +231,53 @@ body {
   margin: 20px 0 20px 0px;
 }
 
+.formo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 350px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin: 50px auto;
+  background-color: var(--contact);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.name, .email {
+  background: #333;
+  border: 0;
+  padding: 16px;
+  width: 100%;
+  border-radius: 6px;
+  color: #fff;
+  max-width: 280px;
+  margin: 5px;
+}
+
+
+button {
+  max-width: 280px;
+  width: 280px;
+  display: inline-block;
+  border: 0;
+  padding: 10px;
+  background: #fff;
+  border-radius: 6px;
+  margin: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+
 @media screen and (min-width: 1500px) {
   .menu {
     right: calc(
@@ -249,12 +296,14 @@ body {
   .write p {
     font-size: 24px; /* Set a specific font size at this breakpoint */
   }
+ 
 }
 
 @media screen and (max-width: 1500px) {
   .menu {
     right: 0; /* Position the menu at the right edge of the screen */
   }
+  
 }
 @media screen and (max-width: 1200px) {
   .content {
@@ -294,5 +343,13 @@ body {
     flex-direction: row;
     white-space: nowrap;
     writing-mode: vertical-lr;
+  }
+  .formo {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px){
+  .formo {
+    margin: 0;
   }
 }
